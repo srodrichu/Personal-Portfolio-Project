@@ -51,7 +51,7 @@ nav li {
 
 a{
     text-decoration: none;
-    color:#787c8b;
+    color:#c7cad8;
 }
 
 a:hover{
@@ -147,6 +147,7 @@ main {
 
 .skills {
     padding-bottom: 10rem;
+    width: 90%;
 }
 
 .skills h1{
@@ -159,4 +160,10 @@ main {
 
 .skills p {
     margin-bottom: 5rem;
+}
+
+.skills img{
+    display: inline-flex;
+    justify-content: space-evenly;
+
 }

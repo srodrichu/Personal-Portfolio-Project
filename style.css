@@ -33,6 +33,10 @@ nav {
     padding: 30px 5%;
 }
 
+nav img {
+    padding-top: 0.7rem;
+}
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -45,6 +49,16 @@ nav li {
     display: inline-block;
 }
 
+a{
+    text-decoration: none;
+    color:#787c8b;
+}
+
+a:hover{
+    color: white;
+    transition: color .2s;
+}
+
 .navlinks {
     padding: 0px 20px;
     font-size: 1.1rem;
@@ -54,8 +68,12 @@ nav li {
 main {
     display: grid;
     padding: 10px 5%;
-    grid-template-rows: 80% 80% 70%;
+    grid-template-rows: 60% 60% 40%;
     align-items: center;
+}
+
+.landing_page {
+    
 }
 
 .name {
@@ -88,14 +106,14 @@ main {
 
 .contact {
 	background-color:transparent;
-	border-radius:8px;
+	border-radius:6px;
 	border:2px solid #a16aff;
 	display:inline-block;
 	cursor:pointer;
 	color:#a16aff;
 	font-family:'Work Sans', sans-serif;
-	font-size:17px;
-	padding:28px 32px;
+	font-size:1.1rem;
+	padding:1.5rem 1.5rem;
 	text-decoration:none;
 }
 .contact:hover {
@@ -113,7 +131,32 @@ main {
     display: block;
   }
 
-.about_me {
+.about_me h1 {
       color: #c7cad8;
+      padding: 0.3rem;
+      text-decoration: underline;
+      text-decoration-color:#a16aff;
+      text-underline-offset: 8px;
   }
 
+.about_me p {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    width: 40%;
+}
+
+.skills {
+    padding-bottom: 10rem;
+}
+
+.skills h1{
+    color: #c7cad8;
+    text-decoration: underline;
+    text-decoration-color:#a16aff;
+    text-underline-offset: 8px;
+    margin-bottom: 1.3rem;
+}
+
+.skills p {
+    margin-bottom: 5rem;
+}

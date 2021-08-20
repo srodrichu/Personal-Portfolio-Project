@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Wotfard';
+    src: url('/Font Folder/Wotfard_Regular/Wotfard_Regular_Webfont/Wotfard-Regular-webfont/wotfard-regular-webfont.ttf');
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/Users/sebastian/Documents/Personal Portfolio Project/Font Folder/Work_Sans/static/WorkSans-SemiBold.ttf');
+}
+
+body {
+    font-family: 'Wotfard';
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+}

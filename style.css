@@ -86,6 +86,10 @@ a:hover{
     top: -3px;
 }
 
+#line:hover {
+    top: initial;
+}
+
 #line {
     height: 10rem;
     bottom:0;

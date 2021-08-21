@@ -96,8 +96,12 @@ a:hover{
 main {
     display: grid;
     padding: 10px 6rem;
-    grid-template-rows: 60% 60% 40%;
+    grid-template-rows: 50% 50% 40%;
     align-items: center;
+}
+
+.landing_page {
+    margin-top:0;
 }
 
 .form_popup {
@@ -106,7 +110,7 @@ main {
     display: none;
     right: 15px;
     z-index: 999;
-    background-color: #d7dbe9;
+    background-color: #f3f4f7;
     border-radius: 6px;
     box-sizing: border-box;
     width:50%;
@@ -134,7 +138,7 @@ main {
     top: .75rem;
     right: .75rem;
     border: none;
-    background-color: #d7dbe9;
+    background-color: #f3f4f7;
     font-size: 1.5rem;
     color: #6a6b72;
     cursor: pointer;
@@ -191,7 +195,7 @@ main {
 .form_mssg * {
     padding-top: 1rem;
     width: 100%;
-    background-color:hsl(262, 60%, 88%)
+    background-color:hsl(262, 63%, 92%)
 }
 
 .form_buttons {
@@ -227,6 +231,7 @@ main {
 .form_buttons buttont:hover span{
     display: block;
   }
+  
 .name {
     font-size: 100px;
     color: #c7cad8;

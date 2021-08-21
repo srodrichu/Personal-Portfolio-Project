@@ -36,6 +36,8 @@ nav {
 
 nav img {
     padding-top: 0.7rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 nav ul {
@@ -65,10 +67,30 @@ a:hover{
     font-size: 1.1rem;
 }
 
+.sidebar {
+    height: auto;
+    position: fixed;
+    width: 3rem;
+    left: 0;
+    bottom: 0;
+}
+
+.sidebar img {
+    padding: 1rem 2rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+#line {
+    height: 10rem;
+    bottom:0;
+}
+
+
 
 main {
     display: grid;
-    padding: 10px 5%;
+    padding: 10px 6rem;
     grid-template-rows: 60% 60% 40%;
     align-items: center;
 }
@@ -76,7 +98,7 @@ main {
 .form_popup {
     position:fixed;
     bottom: 0;
-    display: block;
+    display: none;
     right: 15px;
     z-index: 999;
     background-color: #d7dbe9;
@@ -100,6 +122,17 @@ main {
 .form-container input[type="text"], .form-container textarea {
     padding-left: 1.5rem;
     color: #6a6b72;
+}
+
+.btn_cancel {
+    position:absolute;
+    top: .75rem;
+    right: .75rem;
+    border: none;
+    background-color: #d7dbe9;
+    font-size: 1.5rem;
+    color: #6a6b72;
+    cursor: pointer;
 }
 
 .form-container h1 {
@@ -255,7 +288,7 @@ main {
 .about_me p {
     font-family: 'Overpass', sans-serif;
     font-weight: 300;
-    width: 40%;
+    width: 60%;
 }
 
 .skills {
@@ -273,6 +306,7 @@ main {
 
 .skills p {
     margin-bottom: 5rem;
+    color: #787c8b
 }
 
 .p_icons{

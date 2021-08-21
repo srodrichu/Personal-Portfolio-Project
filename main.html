@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <nav>
@@ -10,10 +11,16 @@
             <ul>
                 <li><a href='#about_me'>About Me</a></li>
                 <li><a href='#skills'>Skills</a></li>
-                <li><a href='#'>Contact</a></li>
+                <li><a href='#' onclick="openForm()">Contact</a></li>
             </ul>
         </div>
     </nav>
+    <div class="sidebar" id="sidebar">
+        <a href="https://github.com/us" id="github logo"><img src=/images/icons8-github-100.svg></a>
+        <a href="#" id="linkedin"><img src=/images/icons8-linkedin-100.svg></a>
+        <a href="#" id="twitter"><img src=/images/icons8-twitter-100.svg></a>
+        <img src="/images/svg.svg" id="line">
+    </div>
     <main class="container">
         <div class="landing_page">
             <h7 class="intro">Hi, my name is:</h7>
@@ -23,13 +30,13 @@
                 Through my journey as a web developer, I aim to accumulate the knowledge required to eventually reach my goal of becoming a
                 software engineer.
             </p>
-            <button class="contact" title="Contact Me">Contact Me</button>
+            <button class="contact" title="Contact Me" onclick="openForm()">Contact Me</button>
         </div>
-        <div class="about_me">
+        <div class="about_me" id="about_me">
             <h1>About Me</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic eligendi eaque cumque eveniet cupiditate repellat recusandae sed necessitatibus quam nesciunt tenetur eius ducimus voluptatibus, explicabo consequatur exercitationem voluptas illo sapiente ut excepturi facere illum inventore ad. Rerum accusamus perspiciatis doloremque quae similique soluta nobis incidunt cumque laudantium repudiandae ad autem, nihil aut voluptates omnis velit rem. Debitis, voluptatum ea. Commodi earum voluptatibus amet aspernatur! Tempora consequatur illo numquam esse porro magnam sit veniam reiciendis architecto qui autem, fugiat laudantium, officiis saepe quae odio, aut iusto in unde. Aliquid, nostrum quam optio delectus quia enim eius dolores odio ab doloremque deserunt. Rem magnam debitis et officiis deserunt exercitationem! Doloribus minima voluptatibus possimus eius consectetur impedit accusantium ratione non praesentium. Laudantium vero, amet cum quam quidem nam quae modi minima sit fuga animi sapiente eaque nisi dolorem officiis adipisci ea accusamus voluptates at corporis a consectetur error iusto? Aliquam quam, unde eligendi nam sequi facere aperiam, architecto autem atque obcaecati blanditiis repellat doloremque accusamus quisquam! Minima nesciunt odit aliquam a dolores. Maiores deleniti suscipit mollitia laudantium ipsa dignissimos doloremque quae nisi. Aut sunt perspiciatis quam tempora sequi, quod, quo placeat dolor fugiat distinctio harum tenetur cumque ipsam voluptatibus culpa, quae nulla quas.</p>
         </div>
-        <div class="skills">
+        <div class="skills" id="skills">
             <h1>Skills</h1>
             <p>(Adding to it slowly)</p>
             <div class="p_icons">
@@ -43,8 +50,9 @@
     <footer>
 
     </footer>
-    <div class="form_popup">
+    <div class="form_popup" id="form_popup">
         <form class="form-container" id="contactform">
+            <button type="submit" class="btn_cancel" onclick="closeForm()">x</button>
             <h1>Contact Me</h1>
             <div class="form_names">
                 <input type="text" placeholder="First Name" name="firstName" required>
@@ -59,7 +67,7 @@
             </div>
             <div class="form_buttons">
                 <button type="submit" class="btn">Submit</button>
-                <button type="submit" class="btn_cancel" onclick="closeForm()">Close</button>
+                <!--<button type="submit" class="btn_cancel" onclick="closeForm()">X</button>-->
             </div>
         </form>
     </div> 

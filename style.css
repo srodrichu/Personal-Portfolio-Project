@@ -79,7 +79,7 @@ main {
     display: block;
     right: 15px;
     z-index: 999;
-    background-color: #787c8b;
+    background-color: #d7dbe9;
     border-radius: 6px;
     box-sizing: border-box;
     width:50%;
@@ -87,15 +87,19 @@ main {
     top: 50%;
     transform: translate(-50%, -50%);
     overflow: overlay;
-    height: 70%;
+    height: 75%;
 }
 
 .form-container {
     max-width: 60rem;
     margin: 5%;
     align-items: center;
-    justify-content: center;
     display: grid;
+}
+
+.form-container input[type="text"], .form-container textarea {
+    padding-left: 1.5rem;
+    color: #6a6b72;
 }
 
 .form-container h1 {
@@ -103,42 +107,59 @@ main {
     margin-bottom: 1rem;
     font-size: 3rem;
     text-align: center;
+    color:#a16aff;
+}
+
+.form-container input, .form-container textarea{
+    text-align:start;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    border-radius: 6px;
+    border-style: none; 
 }
 
 .form_names {
     height: 3rem;
     width: 100%;
     display: inline-flex;
+    margin: .5rem 0;
+    gap: .75rem;
 }
 
 .form_names * {
     width: 50%;
+    background-color:hsl(262, 44%, 93%)
 }
 
 .form_email {
     height: 3rem;
     width: 100%;
     display: inline-flex;
+    margin: .5rem 0;
 }
 
 .form_email * {
     width: 100%;
+    background-color:hsl(262, 63%, 92%)
 }
 
 .form_mssg {
-    height: 5rem;
+    height: 7rem;
     width: 100%;
     display: inline-flex;
+    margin: .5rem 0;
 }
 
 .form_mssg * {
+    padding-top: 1rem;
     width: 100%;
+    background-color:hsl(262, 60%, 88%)
 }
 
 .form_buttons {
     display: inline-flex;
-    justify-content: space-between;
-    margin: 1.5rem;
+    justify-content: space-evenly;
+    margin: 1rem 1rem;
 }
 
 .form_buttons button {
@@ -149,10 +170,25 @@ main {
 	cursor:pointer;
 	color:#a16aff;
 	font-family:'Work Sans', sans-serif;
-	font-size:1rem;
-	padding:0.5rem 0.5rem;
+	font-size:.9rem;
+	padding:1rem 1.2em;
 	text-decoration:none;
 }
+
+.form_buttons button:hover {
+	background-color:hsl(262, 60%, 88%);
+    border:2px solid #a16aff;
+    transition: background-color 0.2s;
+}
+
+.form_buttons button:active {
+	position:relative;
+	top:1px;
+}
+
+.form_buttons buttont:hover span{
+    display: block;
+  }
 .name {
     font-size: 100px;
     color: #c7cad8;
@@ -197,8 +233,8 @@ main {
 	background-color:#a16aff4b;
     border:2px solid #a16aff;
     transition: background-color 0.2s;
-
 }
+
 .contact:active {
 	position:relative;
 	top:1px;

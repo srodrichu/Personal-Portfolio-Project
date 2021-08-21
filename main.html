@@ -8,9 +8,9 @@
         <img src="/logo/logo.svg" alt="logo">
         <div class="navlinks">
             <ul>
-                <li><a href=".about_me">About Me</a></li>
-                <li><a href=#skills>Skills</a></li>
-                <li><a href=#>Contact</a></li>
+                <li><a href='#about_me'>About Me</a></li>
+                <li><a href='#skills'>Skills</a></li>
+                <li><a href='#'>Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -43,4 +43,23 @@
     <footer>
 
     </footer>
+    <div class="form_popup">
+        <form class="form-container" id="contactform">
+            <h1>Contact Me</h1>
+            <div class="form_names">
+                <input type="text" placeholder="First Name" name="firstName" required>
+                <input type="text" placeholder="Surname" name="surname" required>
+            </div>
+            <div class="form_email">
+                <input type="text" placeholder="Enter Email" name="email" required>
+            </div>
+            <div class="form_mssg">
+                <input type="text" placeholder="Enter your message" name="mssg" required>
+            </div>
+            <div class="form_buttons">
+                <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="btn_cancel" onclick="closeForm()">Close</button>
+            </div>
+        </form>
+    </div> 
 </html>

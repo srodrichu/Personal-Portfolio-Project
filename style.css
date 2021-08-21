@@ -27,8 +27,6 @@ h1 {
 }
 
 
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -75,10 +73,86 @@ main {
     align-items: center;
 }
 
-.landing_page {
-    
+.form_popup {
+    position:fixed;
+    bottom: 0;
+    display: block;
+    right: 15px;
+    z-index: 999;
+    background-color: #787c8b;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width:50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: overlay;
+    height: 70%;
 }
 
+.form-container {
+    max-width: 60rem;
+    margin: 5%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+.form-container h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.form_names {
+    height: 3rem;
+    width: 100%;
+    display: inline-flex;
+}
+
+.form_names * {
+    width: 50%;
+}
+
+.form_email {
+    height: 3rem;
+    width: 100%;
+    display: inline-flex;
+}
+
+.form_email * {
+    width: 100%;
+}
+
+.form_mssg {
+    height: 5rem;
+    width: 100%;
+    display: inline-flex;
+}
+
+.form_mssg * {
+    width: 100%;
+}
+
+.form_buttons {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 1.5rem;
+}
+
+.form_buttons button {
+    background-color:transparent;
+	border-radius:6px;
+	border:2px solid #a16aff;
+	display:inline-block;
+	cursor:pointer;
+	color:#a16aff;
+	font-family:'Work Sans', sans-serif;
+	font-size:1rem;
+	padding:0.5rem 0.5rem;
+	text-decoration:none;
+}
 .name {
     font-size: 100px;
     color: #c7cad8;

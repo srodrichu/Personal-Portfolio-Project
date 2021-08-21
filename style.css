@@ -81,6 +81,11 @@ a:hover{
     width: 2rem;
 }
 
+.sidebar img:hover {
+    position: relative;
+    top: -3px;
+}
+
 #line {
     height: 10rem;
     bottom:0;

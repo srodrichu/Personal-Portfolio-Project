@@ -100,7 +100,7 @@ a:hover{
 main {
     display: grid;
     padding: 10px 6rem;
-    grid-template-rows: 50% 50% 40%;
+    grid-template-rows: 100vh 100vh 50vh;
     align-items: center;
 }
 
@@ -303,6 +303,7 @@ main {
     font-family: 'Overpass', sans-serif;
     font-weight: 300;
     width: 60%;
+    line-height: 1.5rem;
 }
 
 .skills {

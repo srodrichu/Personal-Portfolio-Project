@@ -26,6 +26,9 @@ h1 {
     font-size: 80px;
 }
 
+
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -162,8 +165,18 @@ main {
     margin-bottom: 5rem;
 }
 
-.skills img{
+.p_icons{
     display: inline-flex;
     justify-content: space-evenly;
+    margin: 0;
+}
 
+.js_logo, .js_logo, .react_logo, .html_logo{
+    padding: 0 2rem;
+}
+
+.python_logo{
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 2rem;
 }

@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Wotfard';
-    src: url('/Font Folder/Wotfard_Regular/Wotfard_Regular_Webfont/Wotfard-Regular-webfont/wotfard-regular-webfont.ttf');
+    src: url('./Font Folder/Wotfard_Regular/Wotfard_Regular_Webfont/Wotfard-Regular-webfont/wotfard-regular-webfont.ttf');
 }
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('/Font Folder/Work_Sans/static/WorkSans-Medium.ttf');
+    src: url('./Font Folder/Work_Sans/static/WorkSans-Medium.ttf');
 }
 
 @font-face {
     font-family: 'Calibre';
-    src: url('/Font Folder/Test Calibre/test-calibre-semibold.woff2');
+    src: url('./Font Folder/Test Calibre/test-calibre-semibold.woff2');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
